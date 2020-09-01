@@ -5,7 +5,7 @@ import './App';
 function Buttons() {
 
     function ahh() {
-        alert('So much sadness');
+        alert('Sad');
     }
     function woo() {
         alert('YAY!');
