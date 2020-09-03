@@ -3,7 +3,7 @@ import React from 'react';
 function Buttons() {
 
     function ahh() {
-        alert('So much sadness');
+        alert('Sad');
     }
     function woo() {
         alert('YAY!');
