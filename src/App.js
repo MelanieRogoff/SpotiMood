@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import Buttons from './Buttons';
+import SpotifyPlaylistLaunchers from './SpotifyPlaylistLaunchers';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
         <h1>SpotiMood</h1>
         <h3>Pick a mood below in order to view your customized Spotify playlist!</h3>
         <div className="emoji">
-            <Buttons></Buttons>
+            <SpotifyPlaylistLaunchers></SpotifyPlaylistLaunchers>
         </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Buttons() {
+function SpotifyPlaylistLaunchers() {
 
     function ahh() {
         alert('Sad');
@@ -16,4 +16,4 @@ function Buttons() {
     )
 }
 
-export default Buttons;
+export default SpotifyPlaylistLaunchers;
