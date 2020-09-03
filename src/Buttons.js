@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './App';
-
 function Buttons() {
 
     function ahh() {
@@ -12,8 +10,8 @@ function Buttons() {
     }
     return (
         <div>
-           <span className="btns" role="img" onClick={woo} aria-label="smiley">😄</span>
-           <span className="btns" role="img" onClick={ahh} aria-label="sad">😞</span>
+           <span className="spotify-launch-btns" role="img" onClick={woo} aria-label="smiley">😄</span>
+           <span className="spotify-launch-btns" role="img" onClick={ahh} aria-label="sad">😞</span>
         </div>
     )
 }
