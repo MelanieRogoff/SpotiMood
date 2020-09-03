@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.scss';
-import SpotifyPlaylistLaunchers from './SpotifyPlaylistLaunchers';
+import Smiley from './components/Smiley/Smiley';
+import SpotifyBox from './components/SpotifyBox/SpotifyBox'
 
 function App() {
   return (
     <div className="App">
         <h1>SpotiMood</h1>
-        <h3>Pick a mood below in order to view your customized Spotify playlist!</h3>
-        <div className="emoji">
-            <SpotifyPlaylistLaunchers></SpotifyPlaylistLaunchers>
-        </div>
+        <h4>Pick a mood below in order to view your customized Spotify playlist!</h4>
+        <Smiley></Smiley>
+        <SpotifyBox></SpotifyBox>
     </div>
   );
 }
