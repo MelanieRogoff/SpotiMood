@@ -1,30 +1,7 @@
-// styles defined here should only affect HomeScreen
-// we need to remove any styles that is not directly related to HomeScreen
-
 .MuiTypography-h1 {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
-.homeScreen {
-    // style for HomeScreen container
+.homeScreen {// style for HomeScreen container
     background-color: transparent;
-}
-
-// TODO: these styles should not be here. move them to the appropriate components
-// this should be moved to /components/smiley/Smiley.scss
-// also should not be using div. maybe a good name for the wrapper is .smileyContainer. or whatever you deem makes sense
-div#hi {
-    display: flex !important;
-    justify-content: center;
-}
-
-.iconBtn {
-    margin-right: 20px;
-}
-
-.spotify-card {
-    width: 80%;
-    height: 50vh;
-    margin: 15px auto;
-    background-color: #FBD2FF !important;
 }

@@ -1,6 +1,12 @@
 import React from 'react';
 import MoodIcon from '@material-ui/icons/Mood';
 import MoodBadIcon from '@material-ui/icons/MoodBad';
+import { Container, IconButton } from '@material-ui/core';
+
+/** 
+ * This is a where we create emojis and turn them into buttons.
+* @summary Displays happy and sad emojis as icon buttons and emits an event upon click
+*/
 
 export function Smiley() {
 
@@ -11,9 +17,14 @@ export function Smiley() {
         alert('YAY!');
     }
     return (
-        <div id="hi">
-            <MoodIcon className="iconBtn" onClick={woo} color="primary"></MoodIcon>
-            <MoodBadIcon className="iconBtn" onClick={ahh} color="primary"></MoodBadIcon>
-        </div>
+        <Container align='center'>
+            <IconButton onClick={woo}> {/* Putting onClick here so it'll trigger the event */}
+                <MoodIcon className="iconBtn" color="primary"></MoodIcon>
+            </IconButton>
+
+            <IconButton onClick={ahh}>
+                <MoodBadIcon className="iconBtn" color="primary"></MoodBadIcon>
+            </IconButton>
+        </Container>
     )
 }
