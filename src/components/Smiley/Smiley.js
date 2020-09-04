@@ -2,7 +2,7 @@ import React from 'react';
 import MoodIcon from '@material-ui/icons/Mood';
 import MoodBadIcon from '@material-ui/icons/MoodBad';
 
-function Smiley() {
+export function Smiley() {
 
     function ahh() {
         alert('Sad');
@@ -17,5 +17,3 @@ function Smiley() {
         </div>
     )
 }
-
-export default Smiley;
