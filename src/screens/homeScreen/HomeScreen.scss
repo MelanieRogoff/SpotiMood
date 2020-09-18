@@ -4,4 +4,10 @@
 }
 .homeScreen {// style for HomeScreen container
     background-color: transparent;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.headers {
+    text-align: center;
 }

@@ -1,5 +1,5 @@
 // export all the available components
-export * from './Smiley/Smiley'
-export * from './SpotifyBox/SpotifyBox'
+export * from './smiley'
+export * from './spotifyBox'
 
 //this is the entry point

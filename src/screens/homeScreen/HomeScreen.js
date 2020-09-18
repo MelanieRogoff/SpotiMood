@@ -1,7 +1,7 @@
 import React from 'react';
-import './HomeScreen.scss';
+import './homeScreen.scss';
 import { Smiley, SpotifyBox} from '../../components'; //we can group the imports because we did the named export and exported all of the components from the index.js , which makes our imports cleaner 
-import { Container, Typography } from '@material-ui/core';
+import { Box, Typography } from '@material-ui/core';
 
 /**
  * HomeScreen -- this replaces App.js
@@ -11,9 +11,9 @@ export function HomeScreen() {
   return (
     // Use Material-UI instead of DOM primitives (ie: div, etc)
     // look into setting up Material-UI themes so our components share a global theme
-    <Container className="homeScreen">
-      <Typography variant='h4' align='center'>SpotiMood</Typography>
-      <Typography variant='h6' align='center'>
+    <Box className="homeScreen">
+      <Typography variant='h4' className={'headers'}>SpotiMood</Typography>
+      <Typography variant='h6' className={'headers'}>
         Pick a mood below in order to view your customized Spotify playlist!
       </Typography>
         {/* 
@@ -22,6 +22,6 @@ export function HomeScreen() {
         */}
       <Smiley/>
       <SpotifyBox/>
-    </Container>
+    </Box>
   );
 }
