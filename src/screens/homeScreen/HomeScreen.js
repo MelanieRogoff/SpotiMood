@@ -1,7 +1,8 @@
 import React from 'react';
 import './homeScreen.scss';
-import { Smiley, SpotifyBox} from '../../components'; //we can group the imports because we did the named export and exported all of the components from the index.js , which makes our imports cleaner 
+import { Smiley } from '../../components/smiley/smiley'; //we can group the imports because we did the named export and exported all of the components from the index.js , which makes our imports cleaner 
 import { Box, Typography } from '@material-ui/core';
+import { SpotifyBox } from '../../components/spotifyBox/SpotifyBox';
 
 /**
  * HomeScreen -- this replaces App.js

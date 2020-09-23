@@ -16,15 +16,16 @@ function woo() {
 * @summary Displays happy and sad emojis as icon buttons and emits an event upon click
 */
 export function Smiley() {
+
     return (
         <Box className='smiley-container'>
             <IconButton onClick={woo}> {/* Putting onClick here so it'll trigger the event */}
-                <MoodIcon color="primary"></MoodIcon>
+                <MoodIcon id="happy-icon"></MoodIcon>
             </IconButton>
 
             <IconButton onClick={ahh}>
-                <MoodBadIcon color="primary"></MoodBadIcon>
+                <MoodBadIcon id="sad-icon"></MoodBadIcon>
             </IconButton>
         </Box>
-    )
+    );
 }
