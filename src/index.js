@@ -6,7 +6,6 @@ import {HomeScreen} from './screens';
 ReactDOM.render(
   <React.StrictMode>
     <HomeScreen /> 
-    {/* HomeScreen is the same as App.js */}
   </React.StrictMode>,
   document.getElementById('root')
 );
