@@ -2,6 +2,7 @@
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
+
 .homeScreen {// style for HomeScreen container
     background-color: transparent;
     width: 100vw;
@@ -17,5 +18,10 @@
     background: green;
     color: white;
     margin: 25px 25px;
-    align-self: center;
+}
+
+#login-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 }

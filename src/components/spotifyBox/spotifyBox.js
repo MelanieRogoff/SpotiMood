@@ -9,9 +9,11 @@ import { Box, CardContent, Card } from '@material-ui/core';
 export function SpotifyBox() {
    
   return (
-    <Box>
-        <Card> 
-            <CardContent> INSERT SPOTIFY BOX HERE</CardContent> {/* Placeholder content */}
+    <Box alignSelf="center" width={3/4}>
+        <Card> {/*Placeholder content below */}
+            <CardContent> INSERT SPOTIFY BOX HERE</CardContent> 
+            <CardContent> INSERT SPOTIFY BOX HERE</CardContent> 
+            <CardContent> INSERT SPOTIFY BOX HERE</CardContent> 
         </Card>
     </Box>
   );

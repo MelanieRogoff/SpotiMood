@@ -13,9 +13,9 @@ export function HomeScreen() {
     <Box className="homeScreen">
         <Typography variant='h4' className={'headers'}>SpotiMood</Typography>
         
-        <a href="http://localhost:8888">
+        <Box id="login-box">
             <Button id="login-btn">Log in with Spotify!</Button>
-        </a>
+        </Box>
 
         <Typography variant='h6' className={'headers'}>Pick a mood below in order to view your customized Spotify playlist!</Typography>
         {/* 
