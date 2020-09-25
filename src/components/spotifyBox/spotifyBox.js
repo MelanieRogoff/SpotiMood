@@ -10,7 +10,7 @@ export function SpotifyBox() {
    
   return (
     <Box className="box">
-        <Card> {/*Placeholder content below */}
+        <Card> 
             <CardContent> INSERT SPOTIFY BOX HERE</CardContent> 
             <CardContent> INSERT SPOTIFY BOX HERE</CardContent> 
             <CardContent> INSERT SPOTIFY BOX HERE</CardContent> 
