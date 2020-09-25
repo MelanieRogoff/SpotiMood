@@ -1,2 +1,1 @@
-export * from './homeScreen'
-//this is the entry point
+export * from './homeScreen';
