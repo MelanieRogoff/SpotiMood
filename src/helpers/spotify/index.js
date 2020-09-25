@@ -1,1 +1,2 @@
-export * from './get-playlist'
+export * from './getPlaylist';
+export * from './getAuthToken';
