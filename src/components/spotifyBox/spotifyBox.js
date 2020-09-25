@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, CardContent, Card } from '@material-ui/core';
+import './spotifyBox.scss';
 
 /** 
  * This is a where we display the Happy Spotify playlist, or the Sad Spotify playlist, depending on the mood the user chooses. 
@@ -9,7 +10,7 @@ import { Box, CardContent, Card } from '@material-ui/core';
 export function SpotifyBox() {
    
   return (
-    <Box alignSelf="center" width={3/4}>
+    <Box className="box">
         <Card> {/*Placeholder content below */}
             <CardContent> INSERT SPOTIFY BOX HERE</CardContent> 
             <CardContent> INSERT SPOTIFY BOX HERE</CardContent> 
