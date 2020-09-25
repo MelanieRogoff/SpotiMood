@@ -9,7 +9,6 @@ import { Box, Typography, Button } from '@material-ui/core';
  */
 export function HomeScreen() {
   return (
-    // Use Material-UI instead of DOM primitives (ie: div, etc)
     <Box className="homeScreen">
         <Typography variant='h4' className={'headers'}>SpotiMood</Typography>
         
@@ -18,10 +17,7 @@ export function HomeScreen() {
         </Box>
 
         <Typography variant='h6' className={'headers'}>Pick a mood below in order to view your customized Spotify playlist!</Typography>
-        {/* 
-          for any components that don't have children (aka other components in between them) 
-          we can just call the component like this. there's 0 performance boost, but its less things to read on the screen
-        */}
+     
       <Smiley/>
       <SpotifyBox/>
     </Box>
