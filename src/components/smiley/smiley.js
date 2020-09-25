@@ -12,7 +12,6 @@ function woo() {
 }
 
 /** 
- * This is a where we create emojis and turn them into buttons.
 * @summary Displays happy and sad emojis as icon buttons and emits an event upon click
 */
 export function Smiley() {
