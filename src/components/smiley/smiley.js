@@ -3,13 +3,7 @@ import MoodIcon from '@material-ui/icons/Mood';
 import MoodBadIcon from '@material-ui/icons/MoodBad';
 import { Box, IconButton } from '@material-ui/core';
 import './smiley.scss';
-
-function ahh() {
-    alert('Sad');
-}
-function woo() {
-    alert('YAY!');
-}
+import { happySongSearch, sadSongSearch } from '../../helpers/spotify/songSearch/index';
 
 /** 
 * @summary Displays happy and sad emojis as icon buttons and emits an event upon click
@@ -17,12 +11,12 @@ function woo() {
 export function Smiley() {
     return (
         <Box className='smiley-container'>
-            <IconButton onClick={woo}> {/* Putting onClick here so it'll trigger the event */}
+            <IconButton onClick={happySongSearch}> 
                 <MoodIcon id="happy-icon"></MoodIcon>
             </IconButton>
 
-            <IconButton onClick={ahh}>
-                <MoodBadIcon id="sad-icon"></MoodBadIcon>
+            <IconButton>
+                <MoodBadIcon onClick={sadSongSearch} id="sad-icon"></MoodBadIcon>
             </IconButton>
         </Box>
     );
