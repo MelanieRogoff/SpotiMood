@@ -16,6 +16,7 @@ export async function happySongSearch() {
 
         for (let i = 0; i < 10; i++) {
             happyArray.push(results.tracks.items[i].uri);
+            console.log('Happy Songs: ', happyArray[i]);
         }    
     } catch (error) {
         alert('Network error - please try again later.');

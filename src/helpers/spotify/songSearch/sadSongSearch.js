@@ -16,6 +16,7 @@ export async function sadSongSearch() {
 
         for (let i = 0; i < 10; i++) {
             sadArray.push(results.tracks.items[i].uri);
+            console.log('Sad Songs: ', sadArray[i]);
         }    
     } catch (error) {
         alert('Network error - please try again later.');
