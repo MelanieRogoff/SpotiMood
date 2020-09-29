@@ -1,30 +1,26 @@
-import { getAuthToken } from '../getAuthToken';
 import * as SpotifyWebApi from 'spotify-web-api-js';
+import { happiness }  from '../../../constants';
+import { tokenSetter } from '../../tokenSetter';
 
-// ref: https://developer.spotify.com/documentation/web-api/reference/search/search/
-// also ref: https://developer.spotify.com/documentation/web-api/reference/tracks/get-track/
-
-const happyURL = 'https://api.spotify.com/v1/search?q=happy&type=track'; //GET ENDPOINT
-
+/**
+ * @summary Gets 10 happy songs and pushes them into an array for playlist creation.
+ */
 export async function happySongSearch() {
-    const token = await getAuthToken();
-    const spotifyApi = new SpotifyWebApi();
-    spotifyApi.setAccessToken(token);
+    const spotifyApi = new SpotifyWebApi(); //need to create new instance of SpotifyWebApi() to use in tokenSetter below
+    tokenSetter(spotifyApi);
+    const happyArray = [];
+    const happy = happiness[Math.floor(Math.random() * happiness.length)]; 
 
-    spotifyApi.searchTracks(happyURL).then((data) => {
-        console.log(data.tracks, 'tracks to get')
-    }, (err) => {
-        console.log(err.message);
-    });
+    try { 
+        const results = await spotifyApi.searchTracks(happy); 
+
+        for (let i = 0; i < 10; i++) {
+            happyArray.push(results.tracks.items[i].uri);
+        }    
+    } catch (error) {
+        alert('Network error - please try again later.');
+    }
+    
+    return happyArray; 
 }
 
-//QUERY PARAMS: 
-
-    //See about returning the following params:
-        //preview_url (string -- links to a 30s preview )
-        //name (string - name of track)
-        //id (string - the id for the track)
-
-
-
-// Create an API call that looks for 'Sad' songs
